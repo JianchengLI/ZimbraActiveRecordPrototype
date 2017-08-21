@@ -3,7 +3,7 @@ package zimbra.util.activerecord.test;
 import org.junit.Test;
 
 import zimbra.util.activerecord.Account;
-import zimbra.util.activerecord.AccountHandler;
+import zimbra.util.activerecord.handler.AccountHandler;
 import zimbra.util.client.impl.UnitClient;
 
 public class AccountTest {

@@ -8,4 +8,6 @@ public interface DistributionListRequests {
 	public abstract void removeDistributionListAlias();
 	public abstract void addDistributionListMemeber();
 	public abstract void removeDistributionListMemeber();
+	public abstract void getDistributionList();
+	public abstract void getAllDistributionList();
 }

@@ -74,4 +74,15 @@ public class UnitClient extends Client{
 		System.out.println("getAllAccounts");
 	}
 
+	@Override
+	public void getDistributionList() {
+		System.out.println("getDistributionList");
+	}
+
+	@Override
+	public void getAllDistributionList() {
+		System.out.println("getAllDistributionList");
+		
+	}
+
 }

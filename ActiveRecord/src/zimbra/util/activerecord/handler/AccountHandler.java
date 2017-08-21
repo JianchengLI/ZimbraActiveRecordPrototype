@@ -1,15 +1,15 @@
-package zimbra.util.activerecord;
+package zimbra.util.activerecord.handler;
 
 import java.util.List;
 
+import zimbra.util.activerecord.ActiveRecord;
 import zimbra.util.client.Client;
 
-public class AccountHandler implements Handler {
-	
-	private Client client;
-	 
+public class AccountHandler extends Handler {
+
 	public AccountHandler(Client client) {
-		this.client = client;
+		super(client);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -38,5 +38,5 @@ public class AccountHandler implements Handler {
 		client.getAllAccounts();
 		return null;
 	}
-
+	
 }

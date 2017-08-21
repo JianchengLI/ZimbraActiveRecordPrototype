@@ -2,6 +2,8 @@ package zimbra.util.activerecord;
 
 import java.util.List;
 
+import zimbra.util.activerecord.handler.Handler;
+
 public class ActiveRecord {
 	private Handler handler;
 	
