@@ -2,10 +2,8 @@ package zimbra.util.activerecord;
 
 import zimbra.util.activerecord.handler.Handler;
 
-public class Domain extends ActiveRecord {
-
-	public Domain(Handler handler) {
+public class COS extends ActiveRecord {
+	public COS(Handler handler) {
 		super(handler);
 	}
-
 }

@@ -5,9 +5,9 @@ import java.util.List;
 import zimbra.util.activerecord.ActiveRecord;
 import zimbra.util.client.Client;
 
-public class ClassOfServiceHandler extends Handler {
+public class COSHandler extends Handler {
 
-	public ClassOfServiceHandler(Client client) {
+	public COSHandler(Client client) {
 		super(client);
 		// TODO Auto-generated constructor stub
 	}

@@ -1,5 +1,7 @@
 package zimbra.util.activerecord.test;
 
+import java.util.Optional;
+
 import org.junit.Test;
 
 import zimbra.util.activerecord.Account;
@@ -11,7 +13,7 @@ public class AccountTest {
 	@Test
 	public void test() {
 		AccountHandler handler = new AccountHandler(new UnitClient());
-		Account account = new Account(handler);
+		Account account = new Account(handler, Optional.empty());
 		account.save();
 		account.update();
 		account.delete();
