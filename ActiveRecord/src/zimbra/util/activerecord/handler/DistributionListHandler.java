@@ -27,14 +27,14 @@ public class DistributionListHandler extends Handler {
 		client.removeDistributionList();
 	}
 
-	@Override
-	public ActiveRecord get() {
+	
+	public static ActiveRecord get() {
 		client.getDistributionList();
 		return null;
 	}
 
-	@Override
-	public List<ActiveRecord> all() {
+
+	public static List<ActiveRecord> all() {
 		client.getDistributionList();
 		return null;
 	}

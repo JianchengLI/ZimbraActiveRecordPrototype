@@ -30,15 +30,12 @@ public class CalendarResourceHandler extends Handler {
 
 	}
 
-	@Override
-	public ActiveRecord get() {
-		// TODO Auto-generated method stub
+	public static ActiveRecord get() {
 		return null;
 	}
 
-	@Override
-	public List<ActiveRecord> all() {
-		// TODO Auto-generated method stub
+
+	public static List<ActiveRecord> all() {
 		return null;
 	}
 

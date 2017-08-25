@@ -30,14 +30,12 @@ public class DomainHandler extends Handler{
 		
 	}
 
-	@Override
-	public ActiveRecord get() {
+	public static ActiveRecord get() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public List<ActiveRecord> all() {
+	public static List<ActiveRecord> all() {
 		// TODO Auto-generated method stub
 		return null;
 	}

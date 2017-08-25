@@ -6,20 +6,31 @@ import zimbra.util.activerecord.ActiveRecord;
 import zimbra.util.client.Client;
 
 public abstract class Handler {
-	protected Client client;
+	protected static Client client;
 	
 	public Handler(Client client) {
-		this.client = client;
+		Handler.client = client;
 	}
+	
 	public abstract void save(ActiveRecord model);
+	
 	public Client getClient() {
 		return client;
 	}
+	
 	public void setClient(Client client) {
-		this.client = client;
+		Handler.client = client;
 	}
 	public abstract void update(ActiveRecord model);
 	public abstract void delete(ActiveRecord model);
-	public abstract ActiveRecord get();
-	public abstract List<ActiveRecord> all();
+
+	public static ActiveRecord get() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static List<ActiveRecord> all() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

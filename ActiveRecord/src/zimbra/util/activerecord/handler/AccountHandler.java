@@ -2,6 +2,7 @@ package zimbra.util.activerecord.handler;
 
 import java.util.List;
 
+import zimbra.util.activerecord.Account;
 import zimbra.util.activerecord.ActiveRecord;
 import zimbra.util.client.Client;
 
@@ -14,7 +15,7 @@ public class AccountHandler extends Handler {
 
 	@Override
 	public void save(ActiveRecord model) {
-		client.createAccount();
+		client.createAccount((Account)model);
 	}
 
 	@Override
@@ -27,16 +28,12 @@ public class AccountHandler extends Handler {
 		client.removeAccount();
 	}
 
-	@Override
-	public ActiveRecord get() {
-		client.getAccount();
-		return null;
+	public static ActiveRecord get() {
+		return client.getAccount();
 	}
 
-	@Override
-	public List<ActiveRecord> all() {
-		client.getAllAccounts();
-		return null;
+	public static List<ActiveRecord> all() {
+		return client.getAllAccounts();
 	}
 	
 }

@@ -14,6 +14,7 @@ public class AccountTest {
 	public void test() {
 		AccountHandler handler = new AccountHandler(new UnitClient());
 		Account account = new Account(handler, Optional.empty());
+		Account.all();
 		account.save();
 		account.update();
 		account.delete();

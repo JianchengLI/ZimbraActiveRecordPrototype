@@ -1,12 +1,17 @@
 package zimbra.util.client.impl;
 
+import java.util.List;
+
+import zimbra.util.activerecord.Account;
+import zimbra.util.activerecord.ActiveRecord;
 import zimbra.util.client.Client;
 
 public class UnitClient extends Client{
 
 	@Override
-	public void createAccount() {
+	public void createAccount(Account account) {
 		System.out.println("createAccount");
+		System.out.println(account);
 	}
 
 	@Override
@@ -65,13 +70,15 @@ public class UnitClient extends Client{
 	}
 
 	@Override
-	public void getAccount() {
+	public Account getAccount() {
 		System.out.println("getAccount");
+		return null;
 	}
 
 	@Override
-	public void getAllAccounts() {
+	public List<ActiveRecord> getAllAccounts() {
 		System.out.println("getAllAccounts");
+		return null;
 	}
 
 	@Override
